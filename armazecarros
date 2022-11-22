@@ -1,0 +1,73 @@
+aula 17 11 2022 sudo
+
+Traduzir a mensagem para: Português (Brasil) | Nunca traduzir do: Inglês
+Christopher barros
+chris barros
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+/**
+ *
+ * @author Aluno: Christopher Barros mecatronica 3 semestre
+ */
+public class JavaApplication2 {
+        public static String [][] dados = new String [10][3];
+
+    /**
+     * @param args the command line arguments
+     */
+       
+    public static void main (String[] args){
+        // TODO code application logic here
+     
+        inicializa();
+        imprime();
+    }
+             
+            public static void insere(int posicao,
+                   String placa, String modelo, String proprietario){
+                  dados[posicao][0] = placa;
+                  dados[posicao][1] = modelo;
+                  dados[posicao][2] = proprietario;
+
+           
+       
+        for(int i = 0; i < dados.length; i++){
+                 System.out.println("PLACA" + dados [i][0]);  
+                 System.out.println("MODELO" + dados [i][1]);        
+                 System.out.println("PROPRIETARIO" + dados [i][2]);  
+                 System.out.println("----");      
+       
+
+        }
+    }
+   
+    public static void inicializa(){
+    dados[0][0] = "ABC-1010";
+        dados[0][1] = "HB20";
+        dados[0][2] = "JOSE";
+       
+        dados[1][0] = "AAA-1000";
+        dados[1][1] = "COROLLA";
+        dados[1][2] = "MARIA";    
+    }
+ public static void imprime(){
+    for(int i = 0; i < dados.length; i++){
+                 System.out.println("PLACA" + dados [i][0]);  
+                 System.out.println("MODELO" + dados [i][1]);        
+                 System.out.println("PROPRIETARIO" + dados [i][2]);  
+                 System.out.println("----");      
+         
+ }}
+    public static void apaga(int posicao){
+                  dados[posicao][0] = null;
+                  dados[posicao][1] = null;
+                  dados[posicao][2] = null;
+}
+}      
+
+
